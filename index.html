@@ -1,12 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>First Project</title>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h1>Test</h1>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>포트폴리오</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --main-color: #E4EFE7;
+      --sub-color: #99BC85;
+      --background-color: #FDFAF6;
+    }
+
+    html,
+    body,
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--main-color);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      width: 80%;
+      min-height: 100vh;
+      margin: 100px auto;
+      border-radius: 20px;
+      background-color: var(--background-color);
+      padding: 50px;
+    }
+
+    .profile-container {
+      display: flex;
+      gap: 50px;
+    }
+
+    .profile-img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--main-color);
+      border-radius: 20px;
+      width: 250px;
+      height: 250px;
+    }
+
+    .profile-img-container>img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .profile-name-container {
+      display: flex;
+      align-items: end;
+    }
+
+    .profile-name {
+      color: #99BC85;
+    }
+
+    .profile-info-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .profile-info-article {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: var(--main-color);
+    }
+
+    .profile-info-article-link {
+      color: var(--sub-color);
+      text-decoration: none;
+    }
+
+    .profile-info-article-link:hover {
+      text-decoration: underline;
+    }
+
+    .tech-stack {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: var(--sub-color);
+      color: var(--background-color);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="profile-container">
+      <div class="profile-img-container">
+        <img src="./img/redRacket.png">
+      </div>
+      <div class="profile-name-container">
+        <h1>
+          안녕하세요.
+          <br>
+          개발자 <span class="profile-name">신우혁</span>입니다.
+        </h1>
+      </div>
+    </section>
+    <section class="profile-info-container">
+      <article class="profile-info-article">
+        <h2>정보</h2>
+        <h3>이메일 - woopy.dev@gmail.com</h3>
+        <h3>깃허브 -
+          <a href="https://github.com/woopy-dev" class="profile-info-article-link" target="_blank">
+            https://github.com/woopy-dev
+          </a>
+        </h3>
+        <hr>
+        <h4>아침에 일어나서 피곤한 개발자 신우혁입니다.</h4>
+      </article>
+      <article class="profile-info-article">
+        <h2>1차 프로젝트 팀</h2>
+        <h3>어?~ 금지</h3>
+      </article>
+      <article class="profile-info-article">
+        <h2>교육</h2>
+        <h3>타입스크립트로 함께하는 웹 풀 사이클 개발(React, Node.js) 7기</h3>
+        <h4>2025.03 ~ 현재</h4>
+      </article>
+      <article class="profile-info-article">
+        <h2>기술 스택</h2>
+        <h3>프론트엔드</h3>
+        <div class="tech-stack">#TypeScript</div>
+        <div class="tech-stack">#React</div>
+        <div class="tech-stack">#Next.js</div>
+        <h3>백엔드</h3>
+        <div class="tech-stack">#Node.js</div>
+        <div class="tech-stack">#Express</div>
+        <h3>데이터베이스</h3>
+        <div class="tech-stack">#MySQL</div>
+      </article>
+  </div>
+  </section>
+  </div>
+</body>
+
 </html>
